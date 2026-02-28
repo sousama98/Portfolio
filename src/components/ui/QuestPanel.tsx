@@ -17,6 +17,14 @@ type Props = {
 };
 
 export default function QuestPanel({ zone, onClose }: Props) {
+  const [selectedEducation, setSelectedEducation] = useState<"undergrad" | "grad" | null>(null);
+  const [homeSlide, setHomeSlide] = useState(0);
+
+  useEffect(() => {
+    setSelectedEducation(null);
+    setHomeSlide(0);
+  }, [zone?.id]);
+
   if (!zone) return null;
 
   const isExperience = zone.id === "experience";
@@ -26,13 +34,6 @@ export default function QuestPanel({ zone, onClose }: Props) {
   const isEducation = zone.id === "education";
   const isProjects = zone.id === "projects";
   const isThankYou = zone.id === "thank-you";
-  const [selectedEducation, setSelectedEducation] = useState<"undergrad" | "grad" | null>(null);
-  const [homeSlide, setHomeSlide] = useState(0);
-
-  useEffect(() => {
-    setSelectedEducation(null);
-    setHomeSlide(0);
-  }, [zone.id]);
 
   return (
     <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/35 p-4 md:items-center">
@@ -245,14 +246,14 @@ export default function QuestPanel({ zone, onClose }: Props) {
             <section className="rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-500 px-5 py-7 text-white">
               <h3 className="display-font text-3xl font-bold">Get In Touch</h3>
               <p className="mt-2 text-sm sm:text-base">
-                Let's discuss opportunities and collaborate on exciting projects
+                Let&apos;s discuss opportunities and collaborate on exciting projects
               </p>
             </section>
 
             <section className="rounded-2xl border border-[color:var(--line)] bg-white/60 p-5 text-sm leading-relaxed text-[color:var(--ink-soft)]">
-              <h4 className="display-font text-2xl font-bold text-stone-900">Let's Connect</h4>
+              <h4 className="display-font text-2xl font-bold text-stone-900">Let&apos;s Connect</h4>
               <p className="mt-3">
-                I'm always interested in hearing about new opportunities, collaborating on projects, or just having a
+                I&apos;m always interested in hearing about new opportunities, collaborating on projects, or just having a
                 conversation about technology.
               </p>
 

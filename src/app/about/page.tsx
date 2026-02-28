@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="quest-panel rounded-2xl p-5 text-sm leading-relaxed text-[color:var(--ink-soft)]">
             <h2 className="display-font text-2xl font-bold text-stone-900">My Story</h2>
             <p className="mt-4">
-              I'm Sourabrata Samanta, a software engineer turned Data & AI builder who thrives on solving messy,
+              I&apos;m Sourabrata Samanta, a software engineer turned Data & AI builder who thrives on solving messy,
               unstructured problems and turning them into crisp, scalable solutions. My journey started with
               electronics and computer science at KIIT and evolved through years of full-stack engineering at
               Accenture, where I learned how real systems behave under pressure. That foundation shaped how I build
@@ -48,17 +48,17 @@ export default function AboutPage() {
             </p>
             <p className="mt-4">
               These days, I specialize in AI engineering, multimodal RAG pipelines, cloud-native architecture, and
-              full-stack development, blending technical depth with product thinking. I'm currently pursuing my MSIS at
-              Indiana University's Kelley School of Business, focusing heavily on Data Analytics, Cloud Computing, and
+              full-stack development, blending technical depth with product thinking. I&apos;m currently pursuing my MSIS at
+              Indiana University&apos;s Kelley School of Business, focusing heavily on Data Analytics, Cloud Computing, and
               AI strategy.
             </p>
             <p className="mt-4">
               I love working at the intersection of AI systems, data engineering, and product development, where
-              architecture meets creativity. Whether it's RAG, MLOps, cloud infra, or analyst-facing dashboards, I'm
+              architecture meets creativity. Whether it&apos;s RAG, MLOps, cloud infra, or analyst-facing dashboards, I&apos;m
               driven by one goal: shipping solutions that actually move the needle.
             </p>
             <p className="mt-4">
-              Outside tech, I'm a musician and audio storyteller. I compose original guitar pieces, create audio
+              Outside tech, I&apos;m a musician and audio storyteller. I compose original guitar pieces, create audio
               stories in Adobe Audition, and blend sound and narrative as a creative outlet. That balance keeps me
               grounded and fuels the creativity I bring into my engineering work.
             </p>
