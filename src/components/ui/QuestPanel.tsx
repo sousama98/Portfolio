@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { withBasePath } from "@/lib/withBasePath";
 import {
   certificationShowcase,
   contactMethods,
@@ -180,7 +181,12 @@ export default function QuestPanel({ zone, onClose }: Props) {
                       ["/assets/logos/Carousel/IMG_5587.JPG", "/assets/logos/Carousel/IMG_5783.JPG"],
                       ["/assets/logos/Carousel/IMG_6643.JPG", "/assets/logos/Carousel/invent.jpeg"],
                     ][homeSlide].map((src) => (
-                      <img key={src} src={src} alt="Gallery slide" className="h-72 w-full rounded-lg object-cover" />
+                      <img
+                        key={src}
+                        src={withBasePath(src)}
+                        alt="Gallery slide"
+                        className="h-72 w-full rounded-lg object-cover"
+                      />
                     ))}
                   </div>
                   <button

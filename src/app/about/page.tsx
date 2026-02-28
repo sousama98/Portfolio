@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { withBasePath } from "@/lib/withBasePath";
 
 const techStack = [
   "Python",
@@ -76,17 +77,29 @@ export default function AboutPage() {
 
           <aside className="space-y-4">
             <div className="quest-panel rounded-2xl p-4">
-              <img src="/assets/logos/portimage.JPG" alt="Sourabrata Samanta" className="w-full rounded-xl object-cover" />
+              <img
+                src={withBasePath("/assets/logos/portimage.JPG")}
+                alt="Sourabrata Samanta"
+                className="w-full rounded-xl object-cover"
+              />
             </div>
 
             <div className="quest-panel rounded-2xl p-4">
               <h3 className="display-font text-lg font-bold text-stone-900">Affiliations</h3>
               <div className="mt-3 flex flex-wrap items-center gap-2">
-                <img src="/assets/logos/kiit.png" alt="Kalinga Institute of Industrial Technology" className="h-12 rounded bg-white p-1.5" />
-                <img src="/assets/logos/accenture.png" alt="Accenture" className="h-9 rounded bg-white p-1.5" />
-                <img src="/assets/logos/indiana.webp" alt="Indiana University" className="h-12 rounded bg-white p-1.5" />
-                <img src="/assets/logos/mphasis.png" alt="Mphasis" className="h-9 rounded bg-white p-1.5" />
-                <img src="/assets/logos/auntedna.png" alt="auntEDNA.ai" className="h-9 rounded bg-white p-1.5" />
+                <img
+                  src={withBasePath("/assets/logos/kiit.png")}
+                  alt="Kalinga Institute of Industrial Technology"
+                  className="h-12 rounded bg-white p-1.5"
+                />
+                <img src={withBasePath("/assets/logos/accenture.png")} alt="Accenture" className="h-9 rounded bg-white p-1.5" />
+                <img
+                  src={withBasePath("/assets/logos/indiana.webp")}
+                  alt="Indiana University"
+                  className="h-12 rounded bg-white p-1.5"
+                />
+                <img src={withBasePath("/assets/logos/mphasis.png")} alt="Mphasis" className="h-9 rounded bg-white p-1.5" />
+                <img src={withBasePath("/assets/logos/auntedna.png")} alt="auntEDNA.ai" className="h-9 rounded bg-white p-1.5" />
               </div>
             </div>
 

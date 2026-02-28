@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/withBasePath";
+
 export type ZoneId =
   | "home"
   | "education"
@@ -257,7 +259,7 @@ export const educationDetails: EducationDetail[] = [
     title: "Undergraduate",
     subtitle: "Bachelor's Degree",
     university: "KIIT University",
-    logoSrc: "/assets/logos/kiit.png",
+    logoSrc: withBasePath("/assets/logos/kiit.png"),
     degree: "B.Tech in Electronics and Computer Engineering",
     duration: "August 2017 - May 2021",
     gpaLabel: "CGPA",
@@ -284,7 +286,7 @@ export const educationDetails: EducationDetail[] = [
     title: "Graduate",
     subtitle: "Master's Degree",
     university: "Indiana University",
-    logoSrc: "/assets/logos/indiana.webp",
+    logoSrc: withBasePath("/assets/logos/indiana.webp"),
     degree: "Master of Science in Information Systems",
     duration: "May 2024 - Dec 2025",
     gpaLabel: "GPA",
@@ -495,7 +497,7 @@ export const certificationShowcase: CertificationShowcaseItem[] = [
     description:
       "Validates foundational knowledge of AI, ML, and generative AI concepts and AWS AI services.",
     date: "January 2025",
-    logoSrc: "/assets/logos/aws.png",
+    logoSrc: withBasePath("/assets/logos/aws.png"),
   },
   {
     title: "AWS Academy Graduate",
@@ -503,7 +505,7 @@ export const certificationShowcase: CertificationShowcaseItem[] = [
     description:
       "Comprehensive training in cloud computing concepts, AWS core services, security, architecture, and pricing.",
     date: "2025",
-    logoSrc: "/assets/logos/aws.png",
+    logoSrc: withBasePath("/assets/logos/aws.png"),
   },
   {
     title: "Generative AI Engineer",
@@ -511,7 +513,7 @@ export const certificationShowcase: CertificationShowcaseItem[] = [
     description:
       "Expertise in building and deploying generative AI applications using Databricks platform and LLMs.",
     date: "2025",
-    logoSrc: "/assets/logos/databricks.png",
+    logoSrc: withBasePath("/assets/logos/Databricks.png"),
   },
   {
     title: "LangChain & OpenAI",
